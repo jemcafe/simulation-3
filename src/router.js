@@ -10,7 +10,7 @@ import Search from './components/UserAccount/Search/Search';
 
 export default (
     <Switch>
-        <Route exact path="/" component={ Login } />
+        <Route exact path="/(access_token.*)?" component={ Login } />
         <UserAccount path="/user" component={ UserAccount} >
             <Route exact path="/user/" component={ Dashboard } />
             <Route path="/user/profile" component={ Profile } />

@@ -9,7 +9,9 @@ class Dashboard extends Component {
                     
                     <div className="info">
                         <div className="info-container">
-                            <div>Avatar</div>
+                            <div>
+                                <div>Avatar</div>
+                            </div>
                             <div>First Name</div>
                             <div>Last Name</div>
                             <button>Edit Profile</button>

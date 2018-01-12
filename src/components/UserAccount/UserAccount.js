@@ -16,7 +16,7 @@ class UserAccount extends Component {
                 <div className="useraccount-container">
                     {/* <div>USERACCOUNT</div> */}
                     
-                    <div className="header">
+                    <header className="header">
                         <div className="header-container">
                             {/* <div>HEADER</div> */}
 
@@ -24,21 +24,21 @@ class UserAccount extends Component {
                                 <div className="site-name">Helo</div>
                                 <Link to="/user/"><img src={ homeLogo } alt="Home" onClick={ () => updatePageTitle('Dashboard') }/></Link>
                                 <Link to="/user/search"><img src={ searchLogo } alt="Search" onClick={ () => updatePageTitle('Search') }/></Link>
-                                {/* <img src="" alt="Friends"/> */}
+                                {/* <Link to="/user/friends"><div>Friends</div></Link> */}
                             </div>
                             <div className="page-title">{ this.props.pageTitle }</div>
                             <div>Logout</div>
 
                         </div>
-                    </div>
+                    </header>
 
-                    <div className="main">
+                    <main className="main">
                         <div className="main-container panel">
 
                             { this.props.children }
 
                         </div>
-                    </div>
+                    </main>
 
                 </div>
             </div>
