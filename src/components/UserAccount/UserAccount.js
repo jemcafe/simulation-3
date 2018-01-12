@@ -1,32 +1,33 @@
 import React, { Component } from 'react';
 import homeLogo from '../../assets/home.png';
 import searchLogo from '../../assets/search.png';
+import { Link } from 'react-router-dom';
 
 class UserAccount extends Component {
     render () {
         return (
             <div className="useraccount">
                 <div className="useraccount-container">
-
-                    <div>USERACCOUNT</div>
+                    {/* <div>USERACCOUNT</div> */}
                     
-                    <div classname="header">
-                        <div classname="header-container">
+                    <div className="header">
+                        <div className="header-container .panel">
+                            {/* <div>HEADER</div> */}
 
-                            <div>HEADER</div>
-                            <div>Helo</div>
-                            <img src={ homeLogo } alt="Home"/>
-                            <img src={ searchLogo } alt="Search"/>
-                            {/* <img src="" alt="Friends"/> */}
-                            <div>Dashboard</div>
+                            <div className="nav">
+                                <div className="site-name">Helo</div>
+                                <Link to="/user/"><img src={ homeLogo } alt="Home"/></Link>
+                                <Link to="/user/search"><img src={ searchLogo } alt="Search"/></Link>
+                                {/* <img src="" alt="Friends"/> */}
+                            </div>
+                            <div>PAGE TITLE</div>
+                            <div>Logout</div>
 
                         </div>
                     </div>
 
-                    <div classname="main">
-                        <div classname="main-container">
-
-                            <div>MAIN</div>
+                    <div className="main">
+                        <div className="main-container">
 
                             { this.props.children }
 
