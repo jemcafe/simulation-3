@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import homeLogo from '../../assets/home.png';
+import searchLogo from '../../assets/search.png';
 
 class UserAccount extends Component {
     render () {
@@ -12,9 +14,11 @@ class UserAccount extends Component {
                         <div classname="header-container">
 
                             <div>HEADER</div>
-                                <div className="nav">
-                                    <>
-                                </div>
+                            <div>Helo</div>
+                            <img src={ homeLogo } alt="Home"/>
+                            <img src={ searchLogo } alt="Search"/>
+                            {/* <img src="" alt="Friends"/> */}
+                            <div>Dashboard</div>
 
                         </div>
                     </div>
@@ -23,6 +27,8 @@ class UserAccount extends Component {
                         <div classname="main-container">
 
                             <div>MAIN</div>
+
+                            { this.props.children }
 
                         </div>
                     </div>

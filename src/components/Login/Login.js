@@ -13,7 +13,7 @@ class Login extends Component {
                     <div className="container">
                         <img src={ logo } alt="Winky face"/>
                         <h1 className="title">Helo</h1>
-                        <Link to="/dashboard"><button>Login / Register</button></Link>
+                        <Link to="/user"><button>Login / Register</button></Link>
                     </div>
                     
                 </div>
